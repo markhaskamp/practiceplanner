@@ -1,0 +1,16 @@
+//
+//  pplDrillStoreFactory.h
+//  Practice Planner
+//
+//  Created by Mark Haskamp on 11/23/13.
+//  Copyright (c) 2013 Mark Haskamp. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "pplDrillStore.h"
+
+@interface pplDrillStoreFactory : NSObject
+
++(pplDrillStore *)Create:(NSString *)drillStoreDescriptor;
+
+@end
