@@ -40,16 +40,16 @@
             </objects>
             <point key="canvasLocation" x="-364" y="-210"/>
         </scene>
-        <!--Table View Controller - Drill List-->
+        <!--Ppl Drill List Table View Controller - Drill List-->
         <scene sceneID="QY8-LD-zzT">
             <objects>
-                <tableViewController title="Drill List" id="KIy-6K-Gen" sceneMemberID="viewController">
+                <tableViewController title="Drill List" id="KIy-6K-Gen" customClass="pplDrillListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zWI-Ac-4eb">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Qcx-Ww-KiN" detailTextLabel="7Fe-ab-sSb" style="IBUITableViewCellStyleSubtitle" id="dKy-UE-Oeg">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="DrillListCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DrillListCell" textLabel="Qcx-Ww-KiN" detailTextLabel="7Fe-ab-sSb" style="IBUITableViewCellStyleSubtitle" id="dKy-UE-Oeg" customClass="pplDrillTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="300" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dKy-UE-Oeg" id="UbU-ud-mLI">
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="1099" y="32"/>
         </scene>
-        <!--Table View Controller - Practice List-->
+        <!--Ppl Practice List Table View Controller - Practice List-->
         <scene sceneID="Gcg-Et-3Tv">
             <objects>
-                <tableViewController title="Practice List" id="TYK-Vm-gws" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PracticeList" title="Practice List" id="TYK-Vm-gws" customClass="pplPracticeListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LZP-tT-v6r">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,6 +127,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="euG-NT-9Hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="679" y="-189"/>
+        </scene>
+        <!--Ppl Drill Description View Controller-->
+        <scene sceneID="xUw-O1-Hod">
+            <objects>
+                <viewController storyboardIdentifier="DrillDescription" id="GxG-1R-pU1" customClass="pplDrillDescriptionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2AX-QX-WLH"/>
+                        <viewControllerLayoutGuide type="bottom" id="O3t-43-GvE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dhg-QK-XXK">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kj8-ha-m1q">
+                                <rect key="frame" x="20" y="20" width="244" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UC1-aQ-Ido">
+                                <rect key="frame" x="20" y="54" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionText" destination="UC1-aQ-Ido" id="Rzf-9B-cMm"/>
+                        <outlet property="titleLabel" destination="kj8-ha-m1q" id="zPv-hX-fko"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9D-Ed-rzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="1076"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

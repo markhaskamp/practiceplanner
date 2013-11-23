@@ -25,6 +25,10 @@
 		4DB3A7D8184133A300A60B80 /* pplDrillStoreFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3A7D7184133A300A60B80 /* pplDrillStoreFactory.m */; };
 		4DB3A7DB1841340C00A60B80 /* pplDrillStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3A7DA1841340C00A60B80 /* pplDrillStore.m */; };
 		4DB3A7DE1841347300A60B80 /* pplDrillStore_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3A7DD1841347300A60B80 /* pplDrillStore_Test.m */; };
+		4DB3A7E21841394400A60B80 /* pplPracticeListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3A7E11841394400A60B80 /* pplPracticeListTableViewController.m */; };
+		4DB3A7E518413AC600A60B80 /* pplDrillListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3A7E418413AC600A60B80 /* pplDrillListTableViewController.m */; };
+		4DB3A7E818413BF600A60B80 /* pplDrillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3A7E718413BF600A60B80 /* pplDrillTableViewCell.m */; };
+		4DB3A7EB18413CD800A60B80 /* pplDrillDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3A7EA18413CD800A60B80 /* pplDrillDescriptionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,14 @@
 		4DB3A7DA1841340C00A60B80 /* pplDrillStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pplDrillStore.m; sourceTree = "<group>"; };
 		4DB3A7DC1841347300A60B80 /* pplDrillStore_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplDrillStore_Test.h; sourceTree = "<group>"; };
 		4DB3A7DD1841347300A60B80 /* pplDrillStore_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pplDrillStore_Test.m; sourceTree = "<group>"; };
+		4DB3A7E01841394400A60B80 /* pplPracticeListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplPracticeListTableViewController.h; sourceTree = "<group>"; };
+		4DB3A7E11841394400A60B80 /* pplPracticeListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pplPracticeListTableViewController.m; sourceTree = "<group>"; };
+		4DB3A7E318413AC600A60B80 /* pplDrillListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplDrillListTableViewController.h; sourceTree = "<group>"; };
+		4DB3A7E418413AC600A60B80 /* pplDrillListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pplDrillListTableViewController.m; sourceTree = "<group>"; };
+		4DB3A7E618413BF600A60B80 /* pplDrillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplDrillTableViewCell.h; sourceTree = "<group>"; };
+		4DB3A7E718413BF600A60B80 /* pplDrillTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pplDrillTableViewCell.m; sourceTree = "<group>"; };
+		4DB3A7E918413CD800A60B80 /* pplDrillDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplDrillDescriptionViewController.h; sourceTree = "<group>"; };
+		4DB3A7EA18413CD800A60B80 /* pplDrillDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pplDrillDescriptionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +139,16 @@
 				4DB3A7AC18412FA300A60B80 /* pplAppDelegate.h */,
 				4DB3A7AD18412FA300A60B80 /* pplAppDelegate.m */,
 				4DB3A7AF18412FA300A60B80 /* Main.storyboard */,
+				4DB3A7E918413CD800A60B80 /* pplDrillDescriptionViewController.h */,
+				4DB3A7EA18413CD800A60B80 /* pplDrillDescriptionViewController.m */,
 				4DB3A7B218412FA300A60B80 /* pplViewController.h */,
 				4DB3A7B318412FA300A60B80 /* pplViewController.m */,
+				4DB3A7E01841394400A60B80 /* pplPracticeListTableViewController.h */,
+				4DB3A7E11841394400A60B80 /* pplPracticeListTableViewController.m */,
+				4DB3A7E318413AC600A60B80 /* pplDrillListTableViewController.h */,
+				4DB3A7E418413AC600A60B80 /* pplDrillListTableViewController.m */,
+				4DB3A7E618413BF600A60B80 /* pplDrillTableViewCell.h */,
+				4DB3A7E718413BF600A60B80 /* pplDrillTableViewCell.m */,
 				4DB3A7D51841337C00A60B80 /* Models */,
 				4DB3A7DF184136F300A60B80 /* DrillStore */,
 				4DB3A7B518412FA300A60B80 /* Images.xcassets */,
@@ -287,10 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB3A7E518413AC600A60B80 /* pplDrillListTableViewController.m in Sources */,
 				4DB3A7DE1841347300A60B80 /* pplDrillStore_Test.m in Sources */,
+				4DB3A7E21841394400A60B80 /* pplPracticeListTableViewController.m in Sources */,
 				4DB3A7DB1841340C00A60B80 /* pplDrillStore.m in Sources */,
+				4DB3A7EB18413CD800A60B80 /* pplDrillDescriptionViewController.m in Sources */,
 				4DB3A7D41841331E00A60B80 /* pplDrill.m in Sources */,
 				4DB3A7AA18412FA300A60B80 /* main.m in Sources */,
+				4DB3A7E818413BF600A60B80 /* pplDrillTableViewCell.m in Sources */,
 				4DB3A7AE18412FA300A60B80 /* pplAppDelegate.m in Sources */,
 				4DB3A7B418412FA300A60B80 /* pplViewController.m in Sources */,
 				4DB3A7D8184133A300A60B80 /* pplDrillStoreFactory.m in Sources */,
