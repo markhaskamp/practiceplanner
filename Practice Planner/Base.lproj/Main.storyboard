@@ -49,7 +49,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="DrillListCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DrillListCell" textLabel="Qcx-Ww-KiN" detailTextLabel="7Fe-ab-sSb" style="IBUITableViewCellStyleSubtitle" id="dKy-UE-Oeg" customClass="pplDrillTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DrillListCell" textLabel="Qcx-Ww-KiN" detailTextLabel="7Fe-ab-sSb" style="IBUITableViewCellStyleSubtitle" id="dKy-UE-Oeg" customClass="pplDrillTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="300" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dKy-UE-Oeg" id="UbU-ud-mLI">
@@ -72,10 +72,13 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="subtitleLabel" destination="7Fe-ab-sSb" id="cju-wP-xNg"/>
+                                    <outlet property="titleLabel" destination="Qcx-Ww-KiN" id="Zud-3f-580"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="KIy-6K-Gen" id="7I8-bq-Yp3"/>
                             <outlet property="delegate" destination="KIy-6K-Gen" id="oKJ-iY-Sbk"/>
                         </connections>
                     </tableView>
@@ -93,7 +96,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Rbh-Kq-rw7" detailTextLabel="2DS-YZ-InT" style="IBUITableViewCellStyleSubtitle" id="Oaw-R6-JU2">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PracticeListCell" textLabel="Rbh-Kq-rw7" detailTextLabel="2DS-YZ-InT" style="IBUITableViewCellStyleSubtitle" id="Oaw-R6-JU2">
                                 <rect key="frame" x="0.0" y="22" width="400" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oaw-R6-JU2" id="a4p-AM-qyO">
