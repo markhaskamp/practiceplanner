@@ -94,12 +94,6 @@
 		4DB3A79118412FA300A60B80 = {
 			isa = PBXGroup;
 			children = (
-				4DB3A7DC1841347300A60B80 /* pplDrillStore_Test.h */,
-				4DB3A7DD1841347300A60B80 /* pplDrillStore_Test.m */,
-				4DB3A7D91841340C00A60B80 /* pplDrillStore.h */,
-				4DB3A7DA1841340C00A60B80 /* pplDrillStore.m */,
-				4DB3A7D6184133A300A60B80 /* pplDrillStoreFactory.h */,
-				4DB3A7D7184133A300A60B80 /* pplDrillStoreFactory.m */,
 				4DB3A7A318412FA300A60B80 /* Practice Planner */,
 				4DB3A7C218412FA400A60B80 /* Practice PlannerTests */,
 				4DB3A79C18412FA300A60B80 /* Frameworks */,
@@ -133,9 +127,10 @@
 				4DB3A7AC18412FA300A60B80 /* pplAppDelegate.h */,
 				4DB3A7AD18412FA300A60B80 /* pplAppDelegate.m */,
 				4DB3A7AF18412FA300A60B80 /* Main.storyboard */,
-				4DB3A7D51841337C00A60B80 /* Models */,
 				4DB3A7B218412FA300A60B80 /* pplViewController.h */,
 				4DB3A7B318412FA300A60B80 /* pplViewController.m */,
+				4DB3A7D51841337C00A60B80 /* Models */,
+				4DB3A7DF184136F300A60B80 /* DrillStore */,
 				4DB3A7B518412FA300A60B80 /* Images.xcassets */,
 				4DB3A7A418412FA300A60B80 /* Supporting Files */,
 			);
@@ -178,6 +173,20 @@
 				4DB3A7D31841331E00A60B80 /* pplDrill.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		4DB3A7DF184136F300A60B80 /* DrillStore */ = {
+			isa = PBXGroup;
+			children = (
+				4DB3A7DC1841347300A60B80 /* pplDrillStore_Test.h */,
+				4DB3A7DD1841347300A60B80 /* pplDrillStore_Test.m */,
+				4DB3A7D91841340C00A60B80 /* pplDrillStore.h */,
+				4DB3A7DA1841340C00A60B80 /* pplDrillStore.m */,
+				4DB3A7D6184133A300A60B80 /* pplDrillStoreFactory.h */,
+				4DB3A7D7184133A300A60B80 /* pplDrillStoreFactory.m */,
+			);
+			name = DrillStore;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
