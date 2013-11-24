@@ -15,7 +15,10 @@
 @property (nonatomic, strong) NSMutableArray *tags;
 
 
--(id)initWithName:(NSString *)name withDescription:(NSString *)description withTags:(NSMutableArray *)tags;
+-(id)initWithName:(NSString *)name
+  withDescription:(NSString *)description
+         withTags:(NSMutableArray *)tags;
+
 -(NSString *)buildTagString;
 
 @end

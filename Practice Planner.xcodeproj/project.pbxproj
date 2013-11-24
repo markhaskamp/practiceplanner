@@ -35,6 +35,8 @@
 		4DB3A7F5184167C800A60B80 /* practice_planner_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB3A7EF184167C800A60B80 /* practice_planner_76.png */; };
 		4DB3A7F6184167C800A60B80 /* practice_planner_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB3A7F0184167C800A60B80 /* practice_planner_80.png */; };
 		4DB3A7F7184167C800A60B80 /* practice_planner_152.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB3A7F1184167C800A60B80 /* practice_planner_152.png */; };
+		4DB3A7FE18427A5700A60B80 /* pplPracticeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3A7FD18427A5700A60B80 /* pplPracticeListTableViewCell.m */; };
+		4DB3A801184280D700A60B80 /* pplPracticeDrill.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3A800184280D700A60B80 /* pplPracticeDrill.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,10 @@
 		4DB3A7EF184167C800A60B80 /* practice_planner_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = practice_planner_76.png; path = "Practice Planner/images/practice_planner_76.png"; sourceTree = "<group>"; };
 		4DB3A7F0184167C800A60B80 /* practice_planner_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = practice_planner_80.png; path = "Practice Planner/images/practice_planner_80.png"; sourceTree = "<group>"; };
 		4DB3A7F1184167C800A60B80 /* practice_planner_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = practice_planner_152.png; path = "Practice Planner/images/practice_planner_152.png"; sourceTree = "<group>"; };
+		4DB3A7FC18427A5700A60B80 /* pplPracticeListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pplPracticeListTableViewCell.h; path = ../pplPracticeListTableViewCell.h; sourceTree = "<group>"; };
+		4DB3A7FD18427A5700A60B80 /* pplPracticeListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pplPracticeListTableViewCell.m; path = ../pplPracticeListTableViewCell.m; sourceTree = "<group>"; };
+		4DB3A7FF184280D700A60B80 /* pplPracticeDrill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplPracticeDrill.h; sourceTree = "<group>"; };
+		4DB3A800184280D700A60B80 /* pplPracticeDrill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pplPracticeDrill.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,16 +158,18 @@
 				4DB3A7AC18412FA300A60B80 /* pplAppDelegate.h */,
 				4DB3A7AD18412FA300A60B80 /* pplAppDelegate.m */,
 				4DB3A7AF18412FA300A60B80 /* Main.storyboard */,
-				4DB3A7E918413CD800A60B80 /* pplDrillDescriptionViewController.h */,
-				4DB3A7EA18413CD800A60B80 /* pplDrillDescriptionViewController.m */,
 				4DB3A7B218412FA300A60B80 /* pplViewController.h */,
 				4DB3A7B318412FA300A60B80 /* pplViewController.m */,
 				4DB3A7E01841394400A60B80 /* pplPracticeListTableViewController.h */,
 				4DB3A7E11841394400A60B80 /* pplPracticeListTableViewController.m */,
+				4DB3A7FC18427A5700A60B80 /* pplPracticeListTableViewCell.h */,
+				4DB3A7FD18427A5700A60B80 /* pplPracticeListTableViewCell.m */,
 				4DB3A7E318413AC600A60B80 /* pplDrillListTableViewController.h */,
 				4DB3A7E418413AC600A60B80 /* pplDrillListTableViewController.m */,
 				4DB3A7E618413BF600A60B80 /* pplDrillTableViewCell.h */,
 				4DB3A7E718413BF600A60B80 /* pplDrillTableViewCell.m */,
+				4DB3A7E918413CD800A60B80 /* pplDrillDescriptionViewController.h */,
+				4DB3A7EA18413CD800A60B80 /* pplDrillDescriptionViewController.m */,
 				4DB3A7D51841337C00A60B80 /* Models */,
 				4DB3A7DF184136F300A60B80 /* DrillStore */,
 				4DB3A7B518412FA300A60B80 /* Images.xcassets */,
@@ -204,6 +212,8 @@
 			children = (
 				4DB3A7D21841331E00A60B80 /* pplDrill.h */,
 				4DB3A7D31841331E00A60B80 /* pplDrill.m */,
+				4DB3A7FF184280D700A60B80 /* pplPracticeDrill.h */,
+				4DB3A800184280D700A60B80 /* pplPracticeDrill.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -341,7 +351,9 @@
 			files = (
 				4DB3A7E518413AC600A60B80 /* pplDrillListTableViewController.m in Sources */,
 				4DB3A7DE1841347300A60B80 /* pplDrillStore_Test.m in Sources */,
+				4DB3A801184280D700A60B80 /* pplPracticeDrill.m in Sources */,
 				4DB3A7E21841394400A60B80 /* pplPracticeListTableViewController.m in Sources */,
+				4DB3A7FE18427A5700A60B80 /* pplPracticeListTableViewCell.m in Sources */,
 				4DB3A7DB1841340C00A60B80 /* pplDrillStore.m in Sources */,
 				4DB3A7EB18413CD800A60B80 /* pplDrillDescriptionViewController.m in Sources */,
 				4DB3A7D41841331E00A60B80 /* pplDrill.m in Sources */,

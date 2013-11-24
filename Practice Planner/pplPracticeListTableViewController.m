@@ -7,6 +7,10 @@
 //
 
 #import "pplPracticeListTableViewController.h"
+#import "pplPracticeListTableViewCell.h"
+#import "pplDrillTableViewCell.h"
+#import "pplPracticeDrill.h"
+
 
 @interface pplPracticeListTableViewController ()
 
@@ -43,8 +47,11 @@ NSMutableArray *practiceList;
 -(void)addDrill:(NSNotification *)note {
     id poster = [note object];
     UITableViewCell *drillCell = (UITableViewCell *)poster;
+    ;
     
-    [practiceList addObject:drillCell];
+    pplPracticeDrill *newPracticeDrill =
+        [[pplPracticeDrill alloc] initWithName:drillCell.textLabel.text];
+    [practiceList addObject:newPracticeDrill];
     
     UITableView *tableView = (UITableView *)[self view];
     [tableView reloadData];
@@ -68,23 +75,31 @@ NSMutableArray *practiceList;
     return [practiceList count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"PracticeListCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    pplPracticeListTableViewCell *practiceListCell =
+        [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    UITableViewCell *drillCell = (UITableViewCell *)practiceList[indexPath.row];
-    cell.textLabel.text = drillCell.textLabel.text;
-    cell.detailTextLabel.text = drillCell.detailTextLabel.text;
+    pplPracticeDrill *practiceDrill = practiceList[indexPath.row];
+    practiceListCell.detailTextLabel.text = practiceDrill.name;
     
     UISwipeGestureRecognizer *gesture =
     [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
     gesture.direction = UISwipeGestureRecognizerDirectionRight;
-    [cell.contentView addGestureRecognizer:gesture];
+    [practiceListCell.contentView addGestureRecognizer:gesture];
     
-    return cell;
+    return practiceListCell;
 }
+
+-(float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0;
+}
+
+
 
 -(void)didSwipe:(UIGestureRecognizer *)gestureRecognizer {
     
@@ -108,7 +123,7 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
      toIndexPath:(NSIndexPath *)destinationIndexPath
 {
     [self moveIndex:sourceIndexPath.row toIndex:destinationIndexPath.row for:practiceList];
-    UITableViewCell *cell = (UITableViewCell *)practiceList[sourceIndexPath.row];
+    // UITableViewCell *cell = (UITableViewCell *)practiceList[sourceIndexPath.row];
 }
 
 - (void) tableView:( UITableView *)tableView
