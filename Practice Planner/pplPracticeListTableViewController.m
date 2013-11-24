@@ -109,7 +109,6 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 {
     [self moveIndex:sourceIndexPath.row toIndex:destinationIndexPath.row for:practiceList];
     UITableViewCell *cell = (UITableViewCell *)practiceList[sourceIndexPath.row];
-    NSLog(@"practiceList[%d]: %@", sourceIndexPath.row, cell.textLabel.text);
 }
 
 - (void) tableView:( UITableView *)tableView
@@ -122,12 +121,6 @@ commitEditingStyle:( UITableViewCellEditingStyle)editingStyle
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
                          withRowAnimation:UITableViewRowAnimationFade];
     }
-}
-
-- (void)deleteRowsAtIndexPaths:(NSArray *)indexPaths
-              withRowAnimation:(UITableViewRowAnimation)animation
-{
-    NSLog(@"deleteRowsAtIndexPaths");
 }
 
 -(void)moveIndex:(NSInteger)fromRowNdx
