@@ -109,17 +109,10 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Li-W2-bEf">
-                                            <rect key="frame" x="299" y="11" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="fooLabel" destination="2Li-W2-bEf" id="zQT-Vl-iFG"/>
-                                    <outlet property="nameLabel" destination="L47-Tv-cAN" id="rmI-QO-Nok"/>
+                                    <outlet property="nameLabel" destination="L47-Tv-cAN" id="6ei-c1-0bF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

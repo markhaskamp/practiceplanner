@@ -8,6 +8,7 @@
 
 #import "pplPracticeListTableViewCell.h"
 
+
 @implementation pplPracticeListTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier

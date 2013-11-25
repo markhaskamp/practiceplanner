@@ -79,15 +79,16 @@ NSMutableArray *practiceList;
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"PracticeListCell";
-    pplPracticeListTableViewCell *practiceListCell =
-        [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *tableViewCell =
+        [tableView dequeueReusableCellWithIdentifier:CellIdentifier
+                                        forIndexPath:indexPath];
     
-    // Configure the cell...
+    pplPracticeListTableViewCell *practiceListCell = [[pplPracticeListTableViewCell alloc] init];
     pplPracticeDrill *practiceDrill = practiceList[indexPath.row];
-    practiceListCell.detailTextLabel.text = practiceDrill.name;
+    // practiceListCell.nameLabel.text = practiceDrill.name;
     
     UISwipeGestureRecognizer *gesture =
-    [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
+        [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
     gesture.direction = UISwipeGestureRecognizerDirectionRight;
     [practiceListCell.contentView addGestureRecognizer:gesture];
     
